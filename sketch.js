@@ -79,7 +79,7 @@ function text_box(){
   let medium_pad = 0.12 * windowHeight;
 
   let font_factor = 1;
-  if(windowWidth <= 768){
+  if(windowWidth < windowHeight){
     font_factor = 1.5;
   }
 
