@@ -64,6 +64,15 @@ function draw() {
 }
 
 function text_box(){
+  let max_image_height = 0.35 * windowHeight;
+  let image_width = windowWidth*0.7;
+  let image_height = image_width/1.5;
+  if(image_height > max_image_height){
+    image_height = max_image_height;
+    image_width = image_height*1.5;
+  }
+
+  let rect_width = min(windowHeight*0.7,image_width*1.2)
 
   let small_pad = 0.07*windowHeight;
   let smaller_pad = 0.03*windowHeight;
@@ -72,7 +81,6 @@ function text_box(){
 
   fill(10);
   rectMode(CENTER)
-  let rect_width = windowWidth * 0.7;
   let rect_height = windowHeight * 0.9;
   rect(windowWidth/2,windowHeight/2,rect_width,rect_height)
 
@@ -92,16 +100,10 @@ function text_box(){
   let subtitle_y = title_y+smaller_pad;
   text("- and friends",windowWidth/2,subtitle_y);
 
-  let image_y = subtitle_y + medium_pad;
   imageMode(CENTER)
-  let max_image_height = 0.2 * windowHeight;
+  
+  let image_y = subtitle_y + small_pad + image_height/3;
 
-  let image_width = windowWidth*0.7;
-  let image_height = image_width/1.5;
-  if(image_height > max_image_height){
-    image_height = max_image_height;
-    image_width = image_height*1.5;
-  }
 
   image(img,windowWidth/2,image_y,image_width,image_height)
   
