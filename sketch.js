@@ -19,9 +19,9 @@ function setup() {
   colors.push(color(130, 64, 37));
   colors.push(color(78, 38, 22));
 
-  font_title = loadFont('/assets/alagard.ttf');
-  font_text = loadFont('/assets/dogicapixel.ttf');
-  img = loadImage('/assets/itsus.jpg');
+  font_title = loadFont('assets/alagard.ttf');
+  font_text = loadFont('assets/dogicapixel.ttf');
+  img = loadImage('assets/itsus.jpg');
 
 
 
