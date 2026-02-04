@@ -78,6 +78,11 @@ function text_box(){
   let smaller_pad = 0.03*windowHeight;
   let medium_pad = 0.12 * windowHeight;
 
+  let font_factor = 1;
+  if(windowWidth <= 768){
+    font_factor = 1.5;
+  }
+
 
   fill(10);
   rectMode(CENTER)
@@ -90,20 +95,19 @@ function text_box(){
 
   fill(255);
   textAlign(CENTER);
-  textSize(40);
+  textSize(40*font_factor);
 
   textFont(font_title);
   let title_y = rect_top+small_pad;
   text("Been in Bloom",windowWidth/2,title_y);
 
-  textSize(20);
+  textSize(20*font_factor);
   let subtitle_y = title_y+smaller_pad;
   text("- and friends",windowWidth/2,subtitle_y);
 
   imageMode(CENTER)
   
   let image_y = subtitle_y + 1.5*small_pad + image_height/3;
-
 
   image(img,windowWidth/2,image_y,image_width,image_height)
   
@@ -112,7 +116,7 @@ function text_box(){
   let infos3_y = infos2_y+smaller_pad;
 
   textFont(font_text);
-  textSize(14);
+  textSize(14*font_factor);
   text("What: Release Fest & Concert",windowWidth/2,infos1_y);
   text("Where: @Drop-inn - Telefonfabrikken - Gladsaxe",windowWidth/2,infos2_y);
   text("When: 21st of March",windowWidth/2,infos3_y);
@@ -124,9 +128,9 @@ function text_box(){
   let special_guests_y_3 = special_guests_y_2+smaller_pad;
 
   textFont(font_title);
-  textSize(25)
+  textSize(25*font_factor)
   text("Special Guests:",windowWidth/2,special_guests_y_1);
-  textSize(15)
+  textSize(15*font_factor)
   text("Lydia (Singer/Songwriter)",windowWidth/2,special_guests_y_2);
   text("Clara/Nimue (Singer/Songwriter)",windowWidth/2,special_guests_y_3);
 
