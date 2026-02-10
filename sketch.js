@@ -113,12 +113,20 @@ function text_box(){
   let infos1_y = image_y+image_height/2+small_pad;
   let infos2_y = infos1_y+smaller_pad;
   let infos3_y = infos2_y+smaller_pad;
+  let infos4_y = infos3_y+smaller_pad;
+  let infos5_y = infos4_y+smaller_pad;
 
   textFont(font_text);
   textSize(14*font_factor);
   text("What: Release Fest & Concert",windowWidth/2,infos1_y);
   text("Where: @Drop-inn - Telefonfabrikken - Gladsaxe",windowWidth/2,infos2_y);
   text("When: 21st of March",windowWidth/2,infos3_y);
+  textSize(12*font_factor);
+  text("Doors at 18:30",windowWidth/2,infos4_y);
+  text("Concert at 19:30",windowWidth/2,infos5_y);
+
+
+
 
 
 
@@ -133,6 +141,8 @@ function text_box(){
   text("Lydia (Singer/Songwriter)",windowWidth/2,special_guests_y_2);
   text("Clara/Nimue (Singer/Songwriter)",windowWidth/2,special_guests_y_3);
   //text(""+windowWidth,windowWidth/2,special_guests_y_3+small_pad);
+
+  
 
   
 
