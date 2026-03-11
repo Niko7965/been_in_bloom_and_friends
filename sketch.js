@@ -118,7 +118,7 @@ function text_box(){
 
   textFont(font_text);
   textSize(14*font_factor);
-  text("What: Release Fest & Concert",windowWidth/2,infos1_y);
+  text("What: Free Release Fest & Concert",windowWidth/2,infos1_y);
   text("Where: @Drop-inn - Telefonfabrikken - Gladsaxe",windowWidth/2,infos2_y);
   text("When: 21st of March",windowWidth/2,infos3_y);
   textSize(12*font_factor);
